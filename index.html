@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ENTIRE BODY  -->
+    <section class="main display">
+        <section class="decoBox01"></section>
+        <section class="clockBox display">
+            <div class="box1 display">
+                <div class="outputBox display">
+                    <div class="output display">
+                        <p id="password">Password</p>
+                    </div>
+                </div>
+                <div class="copyBox display">
+                    <button id="cp" onclick="copyTxt()">Copy</button>
+                </div>
+            </div>
+            <div class="box2">
+                <button class="btnGen" onclick="gen8()">8 Digits</button>
+                <button class="btnGen" onclick="gen12()">12 Digits</button>
+                <button class="btnGen" onclick="gen16()">16 Digits</button>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
