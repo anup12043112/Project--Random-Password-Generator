@@ -19,85 +19,68 @@ body {
 .main {
     width: 100%;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(14, 13, 13);
     position: relative;
-}
-
-/* ROTATING BOXES  */
-.decoBox01 {
-    width: 35rem;
-    height: 30rem;
-    border-radius: 150%;
-    border-top: solid red .2rem;
-    border-bottom: solid rgb(21, 0, 255) .3rem;
-    animation: rotate 5s linear infinite;
-    position: absolute;
-    z-index: 1;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 /* CLOCK BOX */
 .clockBox {
     width: 28.8rem;
     height: 28.8rem;
-    background-color: rgb(135, 151, 255);
+    background-color: rgb(128, 186, 202);
+    box-shadow: 0 0 .3rem rgb(128, 186, 202), 0 0 .5rem rgb(128, 186, 202), inset 0 0 .3rem rgb(0, 0, 0), inset 0 0 .5rem rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
     border-radius: 150%;
-    border: 0.2rem solid aliceblue;
     flex-direction: column;
     overflow: hidden;
     position: absolute;
     z-index: 2;
 }
-
 .box1 {
     width: 100%;
     height: 50%;
 }
 
 .outputBox {
-    width: 70%;
+    width: 85%;
     height: 100%;
+    align-items: last baseline;
 }
 
 #password {
     font-size: 1.6rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 .output {
     width: 75%;
     height: 20%;
-    background-color: rgba(68, 21, 149, 0.477);
-    border-radius: 5rem;
-    border: .1rem solid black;
-    margin-top: 50%;
+    background-color: aliceblue;
+    border-radius: .4rem;
+    border: .08rem solid black;
+    margin-bottom: 5%;
 }
 
 .copyBox {
     width: 30%;
     height: 100%;
-    
+    align-items: last baseline;
+    margin-bottom: 9%;
+    justify-content: left
 }
 
 #cp {
-    width: 4rem;
-    margin-top: 120%;
-    background-color: rgb(255, 247, 0);
-    border: .1rem solid black;
-    margin-right: 38%;
+    width: 4.4rem;
+    background-color: rgb(0, 151, 164);
+    border: none;
+    height: 1.8rem;
+    border-radius: .2rem;
+    color: aliceblue;
 }
 
 #cp:hover {
-    background-color: aliceblue;
+    background-color: rgb(52, 54, 86);
     font-variant: small-caps;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -110,16 +93,17 @@ body {
     justify-content: center;
 }
 
-button {
+.btnGen {
     width: 8rem;
     height: 2rem;
     font-size: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 3% 3%;
     margin-top: 4%;
+    color: aliceblue;
     border-radius: .4rem;
     border: none;
-    background-color: rgba(255, 216, 169, 0.436);
+    background-color: rgb(0, 35, 63);
 }
 
 .btnGen:hover {
@@ -127,6 +111,8 @@ button {
     width: 8.3rem;
     height: 2.3rem;
     transition: all 0.15s ease-in-out;
+    background-color: bisque;
+    color: black;
 }
 
 @media (min-width:900px) {
@@ -134,20 +120,13 @@ button {
     .main {
         width: 100%;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
         position: relative;
-    }
-
-    /* ROTATING BOXES  */
-    .decoBox01 {
-        width: 35rem;
-        height: 30rem;
     }
 
     /* CLOCK BOX */
     .clockBox {
-        width: 28.8rem;
-        height: 28.8rem;
+        width: 32.8rem;
+        height: 32.8rem;
     }
     #password {
         font-size: 1.6rem;
@@ -155,23 +134,24 @@ button {
     }
 
     .output {
-        width: 75%;
+        width: 80%;
         height: 20%;
-        margin-top: 50%;
     }
     #cp {
-        width: 4rem;
-        margin-top: 120%;
-        margin-right: 38%;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .2rem;
+        margin-bottom: 5%;
     }
     .box2 {
         width: 100%;
         height: 50%;
     }
 
-    button {
+    .btnGen {
         width: 8rem;
-        height: 2rem;
+        height: 2.6rem;
+        font-size: 1.4rem;
     }
 
     .btnGen:hover {
@@ -184,14 +164,7 @@ button {
     .main {
         width: 100%;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
         position: relative;
-    }
-
-    /* ROTATING BOXES  */
-    .decoBox01 {
-        width: 39rem;
-        height: 33rem;
     }
 
     /* CLOCK BOX */
@@ -205,29 +178,28 @@ button {
     }
 
     .output {
-        width: 75%;
+        width: 80%;
         height: 20%;
-        margin-top: 50%;
     }
     #cp {
-        width: 10rem;
-        height: 2.5rem;
-        margin-top: 120%;
-        margin-right: 38%;
+        width: 6rem;
+        height: 1.8rem;
+        margin-bottom: 5%;
     }
     .box2 {
         width: 100%;
         height: 50%;
     }
 
-    button {
+    .btnGen {
         width: 8.5rem;
-        height: 2.5rem;
+        height: 2.6rem;
+        font-size: 1.3rem;
     }
 
     .btnGen:hover {
-        width: 9rem;
-        height: 3rem;
+        width: 8.8rem;
+        height: 2.7rem;
     }
 }
 @media (min-width:365px) and (max-width:700px) {
@@ -235,7 +207,6 @@ button {
     .main {
         width: 100%;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
         position: relative;
     }
 
@@ -247,8 +218,8 @@ button {
 
     /* CLOCK BOX */
     .clockBox {
-        width: 18.8rem;
-        height: 18.8rem;
+        width: 21.8rem;
+        height: 21.8rem;
     }
     #password {
         font-size: 1.1rem;
@@ -256,28 +227,28 @@ button {
     }
 
     .output {
-        width: 75%;
+        width: 85%;
         height: 20%;
-        margin-top: 50%;
     }
     #cp {
         width: 4rem;
-        margin-top: 120%;
-        margin-right: 38%;
+        margin-bottom: 1%;
+        height: 1.8rem;
+        font-size: 0.9rem;
     }
     .box2 {
         width: 100%;
         height: 50%;
     }
 
-    button {
+    .btnGen {
         width: 8rem;
         height: 1.7rem;
     }
 
     .btnGen:hover {
         width: 8.3rem;
-        height: 2.3rem;
+        height: 1.85rem;
     }
 }
 @media (max-width:364px) {
@@ -285,7 +256,6 @@ button {
     .main {
         width: 100%;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
         position: relative;
     }
 
@@ -306,28 +276,27 @@ button {
     }
 
     .output {
-        width: 75%;
+        width: 80%;
         height: 20%;
-        margin-top: 50%;
     }
     #cp {
-        width: 4rem;
-        margin-top: 120%;
-        margin-right: 38%;
+        width: 2.4rem;
+        height: 1.2rem;
+        font-size: 0.6rem;
     }
     .box2 {
         width: 100%;
         height: 50%;
     }
 
-    button {
+    .btnGen {
         width: 4rem;
         height: 1.2rem;
         font-size: 0.7rem;
     }
 
     .btnGen:hover {
-        width: 8.3rem;
-        height: 2.3rem;
+        width: 4.2rem;
+        height: 1.35rem;
     }
 }
